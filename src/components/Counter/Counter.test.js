@@ -1,7 +1,6 @@
 import React from 'react'
 import Counter from './Counter'
 import { shallow } from 'enzyme'
-import renderer from 'react-test-renderer'
 
 describe('Counter', () => {
   // we use the it() function to run individual tests
