@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "dom-testing-library": "^3.11.1",
     "jest-dom": "^2.1.0",
     "react": "^16.5.2",
@@ -25,10 +26,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "axios": "^0.18.0",
-    "axios-mock-adapter": "^1.15.0",
     "enzyme": "^3.7.0",
-    "jest": "^23.6.0",
-    "react-testing-library": "^5.2.0"
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0"
   }
 }
