@@ -1,10 +1,10 @@
 import React from 'react'
 import Counter from './Counter'
 import { shallow } from 'enzyme'
+import renderer from 'react-test-renderer'
 
 describe('Counter', () => {
-  // we use the it() function to run individual tests
-
+  // we use the test() function to run individual tests
   // test the initial state
   test('starts with a count of 0', () => {
     // render the component and get an instance of it
@@ -31,10 +31,9 @@ describe('Counter', () => {
     const count = container.find('p.counter-index').text();
     expect(count).toEqual('Count is: -1');
   });
+
+  // test('component matches the snapshot', () => {
+  //   const tree = renderer.create(<Counter />).toJSON();
+  //   expect(tree).toMatchSnapshot();
+  // })
 }) 
-
-
-/* 
-https://jestjs.io/docs/en/api#testname-fn-timeout
-https://jestjs.io/docs/en/expect#expectvalue
-*/

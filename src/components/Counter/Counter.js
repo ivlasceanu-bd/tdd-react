@@ -10,7 +10,6 @@ class Counter extends Component {
     }
   }
 
-
   increment = () => {
     this.setState( prevState => {
       return {
@@ -34,11 +33,13 @@ class Counter extends Component {
             <div className="card grey lighten-3">
               <div className="card-content">
                 <span className="card-title">Counter component</span>
-                <p className="counter-index">Count is: {this.state.count}</p>
+                {/* TODO: get count from state here */}
+                <p className="counter-index">Count is: </p>
               </div>
               <div className="card-action">
-                <button className="btn waves-effect waves-light pink darken-3 add" onClick={ this.increment }>Add</button>
-                <button className="btn waves-effect waves-light pink darken-3 subtract" onClick={ this.decrement }>Subtract</button>
+                {/* TODO: setup increment/decrement methods here */}
+                <button className="btn waves-effect waves-light pink darken-3 add">Add</button>
+                <button className="btn waves-effect waves-light pink darken-3 subtract">Remove</button>
               </div>
             </div>
           </div>

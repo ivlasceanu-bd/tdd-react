@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import { throws } from 'assert';
 
 class Posts extends Component {
 
@@ -14,16 +13,6 @@ class Posts extends Component {
 
     this.loadData = this.loadData.bind(this);
   }
-
-  // componentDidMount() {
-  //   axios.get(`https://jsonplaceholder.typicode.com/users`)
-  //     .then(res => {
-  //       const users = res.data;
-  //       this.setState({ 
-  //         users: users,
-  //         loaded: true });
-  //     })
-  // }
 
   loadData = async () => {
     axios.get(`https://jsonplaceholder.typicode.com/users`)
@@ -49,7 +38,7 @@ class Posts extends Component {
       <div className="row">
       <div className="col s12 m8 offset-m2">
         <h2>Basic get request</h2>
-        <button className="btn waves-effect waves-light pink darken-3" onClick={ this.loadData }>get users</button>
+        <button className="btn waves-effect waves-light pink darken-3" onClick={this.loadData}>get users</button>
         <ul className="collection">
           {usersList}
         </ul>
