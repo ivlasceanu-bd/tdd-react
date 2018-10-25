@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component matches the snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col s12 m6 offset-m3"
+  >
+    <div
+      className="card grey lighten-3"
+    >
+      <div
+        className="card-content"
+      >
+        <span
+          className="card-title"
+        >
+          Counter component
+        </span>
+        <p
+          className="counter-index"
+        >
+          Count is: 
+          0
+        </p>
+      </div>
+      <div
+        className="card-action"
+      >
+        <button
+          className="btn waves-effect waves-light pink darken-3 add"
+          onClick={[Function]}
+        >
+          Add
+        </button>
+        <button
+          className="btn waves-effect waves-light pink darken-3 subtract"
+          onClick={[Function]}
+        >
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

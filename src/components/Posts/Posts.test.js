@@ -8,7 +8,7 @@ describe('Posts', () => {
   //  test what is rendered
   it('Initial state loading should be false', () => {
     const container = shallow(<Posts />);
-    expect(container.state('loading')).toBeFalsy();
+    expect(container.state('loaded')).toBeFalsy();
   });
 
   // test what is expected

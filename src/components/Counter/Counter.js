@@ -34,12 +34,12 @@ class Counter extends Component {
               <div className="card-content">
                 <span className="card-title">Counter component</span>
                 {/* TODO: get count from state here */}
-                <p className="counter-index">Count is: </p>
+                <p className="counter-index">Count is: { this.state.count }</p>
               </div>
               <div className="card-action">
                 {/* TODO: setup increment/decrement methods here */}
-                <button className="btn waves-effect waves-light pink darken-3 add">Add</button>
-                <button className="btn waves-effect waves-light pink darken-3 subtract">Remove</button>
+                <button className="btn waves-effect waves-light pink darken-3 add" onClick={ this.increment }>Add</button>
+                <button className="btn waves-effect waves-light pink darken-3 subtract" onClick={ this.decrement }>Remove</button>
               </div>
             </div>
           </div>

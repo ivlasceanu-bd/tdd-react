@@ -32,8 +32,8 @@ describe('Counter', () => {
     expect(count).toEqual('Count is: -1');
   });
 
-  // test('component matches the snapshot', () => {
-  //   const tree = renderer.create(<Counter />).toJSON();
-  //   expect(tree).toMatchSnapshot();
-  // })
+  test('component matches the snapshot', () => {
+    const tree = renderer.create(<Counter />).toJSON();
+    expect(tree).toMatchSnapshot();
+  })
 }) 
